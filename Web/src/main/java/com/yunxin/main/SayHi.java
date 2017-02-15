@@ -1,10 +1,11 @@
 package com.yunxin.main;
 
-import com.yunxin.test.Test1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.yunxin.test.Test1;
 
 /**
  * Created by henryzhou on 17/2/14.
@@ -12,12 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableAutoConfiguration
 public class SayHi {
-
-    @Autowired
-    Test1 test1;
+	
+	@Autowired
+	private Test1 t;
 
     @RequestMapping("/SayHi")
     public String SaHi(){
-        return Test1.str;
+    	t.say();
+        return "12312313";
     }
 }

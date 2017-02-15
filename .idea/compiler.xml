@@ -23,17 +23,11 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Service" />
-      </profile>
-      <profile default="false" name="Annotation profile for Web" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="Web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Service" target="1.6" />
+      <module name="Service" target="1.7" />
       <module name="Web" target="1.6" />
       <module name="YunxinWeb" target="1.6" />
     </bytecodeTargetLevel>
